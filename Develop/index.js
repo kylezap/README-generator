@@ -52,6 +52,15 @@ function writeToFile(fileName, data) {
 `# ${data.title}
 ${renderLicenseBadge(data.license)}
 
+# Table of Contents
+1. [Description](#Description)
+2. [Installation](#installation)
+3. [Usage](#tusage)
+4. [License](#license)
+5. [Contributors](#contributors)
+6. [Testing](#testing)
+7. [Questions](#questions)
+
 ## Description
 ${data.description}
 
@@ -62,13 +71,18 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${data.license}
+This is a ${data.license}
 
 ## Contributors
 ${data.contributing}
 
 ## Testing
-${data.test}`,
+${data.test}
+
+## Questions?
+If you have any questions, feel free to send me an email at [kzapcic\@gmail.com](mailto:kzapcic@gmail.com)
+
+`,
 
 (err) => err ? console.log(err) : console.log('Success!'))};
 
